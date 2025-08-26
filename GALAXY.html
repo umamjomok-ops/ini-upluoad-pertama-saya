@@ -1,0 +1,269 @@
+
+
+<!DOCTYPE html>
+
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Galaxy Explorer - Animasi dan Penjelasan Lengkap Galaksi</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      overflow: hidden;
+      background: radial-gradient(ellipse at center, #0a0a2a 0%, #000 100%);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #fff;
+      line-height: 1.7;
+      padding-bottom: 100px;
+    }
+
+    canvas {
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 0;
+    }
+
+    .title {
+      position: fixed;
+      top: 30px;
+      width: 100%;
+      text-align: center;
+      font-size: 3rem;
+      color: #0ff;
+      text-shadow: 0 0 10px #0ff, 0 0 20px #00f;
+      z-index: 10;
+      user-select: none;
+      font-weight: bold;
+    }
+
+    .content {
+      position: relative;
+      max-width: 900px;
+      margin: 150px auto 80px;
+      background: rgba(0, 0, 20, 0.8);
+      padding: 40px 50px;
+      border-radius: 15px;
+      box-shadow: 0 0 35px #0ff;
+      z-index: 10;
+      overflow-y: auto;
+      max-height: 75vh;
+    }
+
+    .content h2 {
+      color: #0ff;
+      margin-bottom: 20px;
+      font-size: 2.2rem;
+      border-bottom: 3px solid #0ff;
+      padding-bottom: 10px;
+      font-weight: 700;
+    }
+
+    .content p {
+      margin-bottom: 22px;
+      font-size: 1.15rem;
+      text-align: justify;
+    }
+
+    .content ul {
+      margin-left: 25px;
+      margin-bottom: 22px;
+      list-style-type: disc;
+      color: #a0f0ff;
+    }
+
+    .content ul li {
+      margin-bottom: 12px;
+      font-size: 1.1rem;
+    }
+
+    @media (max-width: 768px) {
+      .title {
+        font-size: 2.2rem;
+      }
+
+      .content {
+        margin: 120px 20px 50px;
+        padding: 25px 30px;
+        max-height: 70vh;
+      }
+
+      .content h2 {
+        font-size: 1.8rem;
+      }
+
+      .content p,
+      .content ul li {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <canvas id="galaxy"></canvas>
+
+  <h1 class="title">✨ Galaxy Explorer ✨</h1>
+
+  <section class="content" aria-label="Informasi lengkap tentang galaksi">
+   <h1>LINK HALAMAN</h1>
+    <li><a href="LAUT DALAM.html">LAUT DALAM</a></li>
+    <li><a href="GALAXY.html">GALAXY</a></li>
+    <li><a href="MAKHLUK ANEH.html">MAKHLUK ANEH</a></li>
+    <li><a href="index.html">BERANDA</a></li> 
+    <h2>Pengenalan Galaksi</h2>
+    <p>
+      Galaksi adalah struktur besar yang terdiri dari miliaran hingga triliunan bintang, gas, debu, dan materi gelap, semuanya terikat oleh gaya gravitasi. Galaksi merupakan unit fundamental dalam struktur alam semesta, menjadi tempat dimana bintang lahir, hidup, dan mati.
+    </p>
+    <p>
+      Galaksi terbentuk sejak miliaran tahun yang lalu, beberapa ratus juta tahun setelah Big Bang. Proses pembentukan dan evolusi galaksi adalah topik utama dalam kosmologi dan astronomi modern.
+    </p>
+
+    <h2>Jenis-Jenis Galaksi</h2>
+    <p>Galaksi digolongkan berdasarkan bentuk dan struktur utama mereka:</p>
+    <ul>
+      <li>
+        <strong>Galaksi Spiral:</strong> Memiliki bentuk cakram dengan lengan spiral yang berputar mengelilingi pusat galaksi. Lengan ini kaya akan gas dan debu, tempat lahirnya bintang-bintang baru. Contohnya adalah Galaksi Bima Sakti dan Andromeda.
+      </li>
+      <li>
+        <strong>Galaksi Elips:</strong> Berbentuk elips atau bola, galaksi ini memiliki sedikit gas dan debu sehingga aktivitas pembentukan bintang sangat rendah. Umumnya terdiri dari bintang tua. Contoh galaksi elips adalah M87.
+      </li>
+      <li>
+        <strong>Galaksi Tak Beraturan:</strong> Galaksi yang tidak memiliki bentuk tertentu, biasanya karena pengaruh gravitasi dari galaksi lain atau benturan galaksi. Contohnya adalah Galaksi Magellan Besar dan Kecil.
+      </li>
+    </ul>
+
+    <h2>Komponen Utama Galaksi</h2>
+    <p>
+      Setiap galaksi memiliki beberapa komponen utama, di antaranya:
+    </p>
+    <ul>
+      <li>
+        <strong>Bintang:</strong> Unit dasar galaksi, dari bintang muda yang panas hingga bintang tua dan raksasa merah yang mulai mati.
+      </li>
+      <li>
+        <strong>Gas dan Debu Antarbintang:</strong> Terletak di antara bintang, gas ini menjadi bahan bakar bagi pembentukan bintang baru.
+      </li>
+      <li>
+        <strong>Materi Gelap:</strong> Materi misterius yang tidak memancarkan cahaya tapi massa dan gravitasinya mempengaruhi gerak bintang dan galaksi.
+      </li>
+      <li>
+        <strong>Lubang Hitam Supermasif:</strong> Biasanya berada di pusat galaksi besar, dengan massa jutaan hingga milyaran kali Matahari. Lubang hitam ini mempengaruhi dinamika pusat galaksi.
+      </li>
+    </ul>
+
+    <h2>Galaksi Bima Sakti</h2>
+    <p>
+      Bima Sakti adalah galaksi spiral tempat tata surya kita berada. Galaksi ini memiliki diameter sekitar 100.000 tahun cahaya dan terdiri dari 200 hingga 400 miliar bintang, termasuk Matahari kita. Pusat galaksi ini diduga memiliki lubang hitam supermasif bernama Sagittarius A* yang sangat masif dan mempengaruhi dinamika bintang di sekitarnya.
+    </p>
+    <p>
+      Bima Sakti juga terdiri dari berbagai lengan spiral yang menjadi tempat terbentuknya bintang-bintang baru dan daerah aktif lain seperti nebula dan gugusan bintang muda.
+    </p>
+
+    <h2>Grup dan Gugus Galaksi</h2>
+    <p>
+      Galaksi tidak tersebar secara acak di alam semesta, tetapi biasanya terkumpul dalam kelompok atau gugus. Misalnya, Bima Sakti tergabung dalam Grup Lokal yang juga berisi galaksi Andromeda dan beberapa galaksi kecil lainnya. Gugus galaksi dapat berisi ribuan galaksi yang berinteraksi melalui gravitasi.
+    </p>
+
+    <h2>Pergerakan dan Interaksi Galaksi</h2>
+    <p>
+      Galaksi dapat bergerak dan berinteraksi satu sama lain. Beberapa galaksi bahkan dapat bertabrakan dan bergabung, membentuk galaksi baru dengan struktur dan karakteristik yang berbeda. Interaksi ini penting dalam evolusi galaksi.
+    </p>
+    <p>
+      Contohnya adalah galaksi Antena dan galaksi Arp 220 yang merupakan hasil penggabungan dua galaksi spiral yang saling bertabrakan.
+    </p>
+
+    <h2>Pembentukan Bintang di Galaksi</h2>
+    <p>
+      Gas dan debu yang terdapat di galaksi membentuk awan molekul besar yang merupakan tempat kelahiran bintang baru. Proses pembentukan bintang terjadi ketika awan molekul ini runtuh di bawah gravitasi sendiri hingga suhu dan tekanan cukup tinggi untuk memulai reaksi fusi nuklir.
+    </p>
+    <p>
+      Daerah pembentukan bintang ini biasanya terlihat sangat cerah dan berwarna-warni, seperti Nebula Orion yang terkenal.
+    </p>
+
+    <h2>Materi Gelap dan Peranannya</h2>
+    <p>
+      Materi gelap adalah salah satu misteri terbesar dalam astronomi. Meskipun tidak dapat dilihat secara langsung, kehadirannya dapat diketahui dari pengaruh gravitasi yang mempengaruhi gerakan bintang dan galaksi. Diperkirakan materi gelap membentuk sekitar 27% dari total massa dan energi alam semesta.
+    </p>
+
+    <h2>Evolusi Galaksi</h2>
+    <p>
+      Galaksi mengalami evolusi selama miliaran tahun. Proses ini dipengaruhi oleh pembentukan bintang, interaksi dengan galaksi lain, serta aktivitas di pusat galaksi seperti ledakan supernova dan aktivitas lubang hitam.
+    </p>
+    <p>
+      Studi tentang galaksi sangat penting untuk memahami bagaimana alam semesta berkembang dari kondisi awal hingga sekarang.
+    </p>
+
+    <h2>Masa Depan Galaksi</h2>
+    <p>
+      Masa depan galaksi tergantung pada dinamika kosmik alam semesta. Misalnya, galaksi Bima Sakti diperkirakan akan bertabrakan dengan galaksi Andromeda dalam sekitar 4-5 miliar tahun, membentuk galaksi elips besar baru. Tabrakan galaksi semacam ini umum terjadi dan memainkan peran besar dalam evolusi galaksi.
+    </p>
+
+    <h2>Kesimpulan</h2>
+    <p>
+      Galaksi adalah blok bangunan utama alam semesta yang kompleks dan dinamis. Dengan mempelajari galaksi, kita tidak hanya memahami struktur dan sejarah kosmos, tapi juga asal-usul dari tata surya dan kehidupan kita sendiri.
+    </p>
+    <p>
+      🌌 <em>Menjelajahi galaksi adalah menjelajahi asal-usul dan masa depan alam semesta.</em>
+    </p>
+  </section>
+
+  <script>
+    const canvas = document.getElementById("galaxy");
+    const ctx = canvas.getContext("2d");
+
+    let w, h, stars = [];
+
+    function resizeCanvas() {
+      w = canvas.width = window.innerWidth;
+      h = canvas.height = window.innerHeight;
+    }
+
+    window.addEventListener('resize', resizeCanvas);
+    resizeCanvas();
+
+    function Star() {
+      this.x = Math.random() * w;
+      this.y = Math.random() * h;
+      this.radius = Math.random() * 1.5;
+      this.alpha = Math.random();
+      this.speed = Math.random() * 0.5;
+
+      this.draw = function () {
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
+        ctx.fillStyle = `rgba(255, 255, 255, ${this.alpha})`;
+        ctx.fill();
+      };
+
+      this.update = function () {
+        this.alpha += (Math.random() - 0.5) * 0.05;
+        if (this.alpha < 0) this.alpha = 0;
+        if (this.alpha > 1) this.alpha = 1;
+        this.draw();
+      };
+    }
+
+    for (let i = 0; i < 600; i++) {
+      stars.push(new Star());
+    }
+
+    function animate() {
+      ctx.fillStyle = "rgba(0, 0, 30, 0.2)";
+      ctx.fillRect(0, 0, w, h);
+
+      stars.forEach(star => star.update());
+
+      requestAnimationFrame(animate);
+    }
+
+    animate();
+  </script>
+</body>
+</html>

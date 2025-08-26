@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Creature Explorer - Makhluk Aneh di Dunia</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      overflow: hidden;
+      background: radial-gradient(ellipse at center, #1b1b2f 0%, #000 100%);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #fff;
+      line-height: 1.7;
+      padding-bottom: 100px;
+    }
+
+    canvas {
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 0;
+    }
+
+    .title {
+      position: fixed;
+      top: 30px;
+      width: 100%;
+      text-align: center;
+      font-size: 3rem;
+      color: #0ff;
+      text-shadow: 0 0 10px #0ff, 0 0 20px #0099ff;
+      z-index: 10;
+      user-select: none;
+      font-weight: bold;
+    }
+
+    .content {
+      position: relative;
+      max-width: 900px;
+      margin: 150px auto 80px;
+      background: rgba(10, 10, 30, 0.85);
+      padding: 40px 50px;
+      border-radius: 15px;
+      box-shadow: 0 0 35px #0ff;
+      z-index: 10;
+      overflow-y: auto;
+      max-height: 75vh;
+    }
+
+    .content h2 {
+      color: #0ff;
+      margin-bottom: 20px;
+      font-size: 2.2rem;
+      border-bottom: 3px solid #0ff;
+      padding-bottom: 10px;
+      font-weight: 700;
+    }
+
+    .content p {
+      margin-bottom: 22px;
+      font-size: 1.15rem;
+      text-align: justify;
+    }
+
+    .content ul {
+      margin-left: 25px;
+      margin-bottom: 22px;
+      list-style-type: disc;
+      color: #a0f0ff;
+    }
+
+    .content ul li {
+      margin-bottom: 12px;
+      font-size: 1.1rem;
+    }
+
+    @media (max-width: 768px) {
+      .title {
+        font-size: 2.2rem;
+      }
+
+      .content {
+        margin: 120px 20px 50px;
+        padding: 25px 30px;
+        max-height: 70vh;
+      }
+
+      .content h2 {
+        font-size: 1.8rem;
+      }
+
+      .content p,
+      .content ul li {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <canvas id="stars"></canvas>
+
+  <h1 class="title">🦑 Creature Explorer: Makhluk Aneh di Dunia 🐙</h1>
+
+  <section class="content" aria-label="Informasi lengkap tentang makhluk aneh di dunia">
+    <h1>LINK HALAMAN</h1>
+    <li><a href="LAUT DALAM.html">LAUT DALAM</a></li>
+    <li><a href="GALAXY.html">GALAXY</a></li>
+    <li><a href="MAKHLUK ANEH.html">MAKHLUK ANEH</a></li>
+    <li><a href="index.html">BERANDA</a></li>
+    <h2>Pengenalan Makhluk Aneh</h2>
+    <p>
+      Dunia kita penuh dengan makhluk hidup yang luar biasa, beberapa di antaranya tampak begitu aneh dan unik sehingga seperti berasal dari planet lain. Makhluk-makhluk ini memiliki adaptasi dan penampilan yang sangat berbeda dari hewan pada umumnya, menyesuaikan diri dengan lingkungan ekstrem atau kondisi khusus.
+    </p>
+    <p>
+      Berikut ini kami sajikan beberapa makhluk aneh dari berbagai belahan dunia yang menarik untuk dipelajari dan menambah wawasan tentang keanekaragaman hayati di planet ini.
+    </p>
+
+    <h2>1. Axolotl (Ambystoma mexicanum)</h2>
+    <p>
+      Axolotl adalah jenis salamander air yang unik karena kemampuannya mempertahankan ciri larva sepanjang hidupnya, sebuah fenomena yang disebut neotenia. Axolotl bisa meregenerasi anggota tubuh yang hilang, termasuk jantung dan bagian otak.
+    </p>
+
+    <h2>2. Paus Beluga</h2>
+    <p>
+      Paus putih berukuran sedang ini dikenal dengan suara “nyanyiannya” yang kompleks. Paus Beluga juga memiliki wajah yang sangat ekspresif dan kemampuan untuk mengubah suara, mirip dengan alat komunikasi manusia.
+    </p>
+
+    <h2>3. Ikan Blob (Psychrolutes marcidus)</h2>
+    <p>
+      Dikenal sebagai “ikan paling jelek di dunia”, ikan blob hidup di kedalaman laut yang sangat gelap. Bentuk tubuhnya seperti gel yang menggantung, beradaptasi dengan tekanan tinggi dan suhu rendah.
+    </p>
+
+    <h2>4. Tardigrada (Beruang Air)</h2>
+    <p>
+      Tardigrada adalah makhluk mikroskopis yang terkenal dengan kemampuan bertahan hidup ekstrem. Mereka bisa bertahan di ruang hampa, suhu ekstrem, radiasi tinggi, dan tekanan sangat besar.
+    </p>
+
+    <h2>5. Kuda Laut Daun (Phycodurus eques)</h2>
+    <p>
+      Kuda laut ini memiliki tubuh yang menyerupai daun laut, membantu mereka berkamuflase dengan sempurna di habitatnya. Bentuk unik ini memudahkan mereka bersembunyi dari predator.
+    </p>
+
+    <h2>Adaptasi Ekstrem Makhluk Aneh</h2>
+    <p>
+      Makhluk-makhluk aneh ini menunjukkan bagaimana evolusi bisa menghasilkan adaptasi luar biasa, baik untuk bertahan hidup di lingkungan ekstrem seperti laut dalam, gurun panas, atau hutan hujan yang lembap.
+    </p>
+    <ul>
+      <li><strong>Bioluminesensi:</strong> Kemampuan memancarkan cahaya sendiri, ditemukan di banyak makhluk laut dalam untuk menarik mangsa atau berkomunikasi.</li>
+      <li><strong>Regenerasi:</strong> Seperti pada Axolotl, yang dapat menumbuhkan kembali anggota tubuh yang hilang.</li>
+      <li><strong>Ketahanan terhadap kondisi ekstrem:</strong> Seperti tardigrada yang mampu bertahan di luar angkasa dan suhu sangat ekstrem.</li>
+    </ul>
+
+    <h2>Mengapa Kita Perlu Mengenal Makhluk Aneh?</h2>
+    <p>
+      Memahami makhluk aneh ini penting untuk ilmu pengetahuan, karena mereka seringkali menyimpan rahasia tentang adaptasi, evolusi, dan potensi medis atau teknologi baru. Contohnya, penelitian pada tardigrada membantu memahami ketahanan terhadap radiasi, dan studi regenerasi Axolotl membuka peluang dalam bidang medis.
+    </p>
+
+    <h2>Kesimpulan</h2>
+    <p>
+      Alam memiliki keanekaragaman makhluk yang luar biasa dan kadang tak terduga. Dengan mempelajari makhluk aneh ini, kita dapat lebih menghargai keajaiban dan kompleksitas dunia tempat kita tinggal, sekaligus mendapatkan inspirasi untuk inovasi dan konservasi.
+    </p>
+    <p>🌿 <em>Jelajahi dunia makhluk aneh dan temukan keajaiban tersembunyi di bumi kita!</em></p>
+  </section>
+
+  <script>
+    const canvas = document.getElementById("stars");
+    const ctx = canvas.getContext("2d");
+
+    let w, h, stars = [];
+
+    function resizeCanvas() {
+      w = canvas.width = window.innerWidth;
+      h = canvas.height = window.innerHeight;
+    }
+
+    window.addEventListener('resize', resizeCanvas);
+    resizeCanvas();
+
+    function Star() {
+      this.x = Math.random() * w;
+      this.y = Math.random() * h;
+      this.radius = Math.random() * 1.5;
+      this.alpha = Math.random();
+      this.speed = Math.random() * 0.5;
+
+      this.draw = function () {
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
+        ctx.fillStyle = `rgba(255, 255, 255, ${this.alpha})`;
+        ctx.fill();
+      };
+
+      this.update = function () {
+        this.alpha += (Math.random() - 0.5) * 0.05;
+        if (this.alpha < 0) this.alpha = 0;
+        if (this.alpha > 1) this.alpha = 1;
+        this.draw();
+      };
+    }
+
+    for (let i = 0; i < 600; i++) {
+      stars.push(new Star());
+    }
+
+    function animate() {
+      ctx.fillStyle = "rgba(0, 0, 40, 0.3)";
+      ctx.fillRect(0, 0, w, h);
+
+      stars.forEach(star => star.update());
+
+      requestAnimationFrame(animate);
+    }
+
+    animate();
+  </script>
+</body>
+</html>
+
